@@ -14,23 +14,19 @@
             android:id="@+id/layout1"
             android:weightSum="4"
             >
-
-
-
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Puntos"
-            android:textSize="50dp"
+            android:text="Puntuacion"
+            android:textSize="40dp"
             android:layout_centerInParent="true"
             android:id="@+id/text_puntos"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="21"
             android:textSize="40dp"
             android:layout_centerInParent="true"
             android:id="@+id/text_total"
@@ -40,19 +36,34 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
             android:text="Tomar carta"
             android:layout_below="@+id/text_total"
             android:id="@+id/addCarta"
             />
         <Button
-            android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Resultados"
+        android:layout_below="@+id/addCarta"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_resultados"
+        />
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
             android:text="Enviar Puntos"
+            android:layout_alignParentRight="false"
             android:layout_below="@+id/addCarta"
             android:id="@+id/btn_enviar_puntos"
             />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:text="Reinicar juego"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_enviar_puntos"
+            android:id="@+id/btn_borrar"/>
 
 
 </RelativeLayout>
