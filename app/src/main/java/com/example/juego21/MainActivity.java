@@ -30,7 +30,6 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
     TextView total;
-    Button addCarta,limpiarLinear;
     Integer puntos=0;
     LinearLayout layout1;
     RequestQueue queue;
@@ -43,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         findViewById(R.id.addCarta).setOnClickListener(this);
         findViewById(R.id.btn_borrar).setOnClickListener(this);
         findViewById(R.id.btn_enviar_puntos).setOnClickListener(this);
+        findViewById(R.id.btn_resultados).setOnClickListener(this);
         layout1 = findViewById(R.id.layout1);
 
        /* addCarta.setOnClickListener(new View.OnClickListener() {
@@ -90,8 +90,6 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                                 case 9: imageView.setImageResource(R.drawable.nueve_c);break;
                                 case 10: imageView.setImageResource(R.drawable.diez_c);break;
                                 case 11: imageView.setImageResource(R.drawable.once_c);break;
-                                case 12: imageView.setImageResource(R.drawable.doce_c);break;
-                                case 13: imageView.setImageResource(R.drawable.trese_c);break;
                             }
                             puntos += numero;
                             addView(imageView, 0, LinearLayout.LayoutParams.MATCH_PARENT);
@@ -144,6 +142,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                 break;
             case R.id.btn_resultados:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(("https://ramiro174.com/resultados"))));
+
                 break;
             }
 
